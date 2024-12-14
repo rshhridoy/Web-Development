@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="feedback.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">PhotoBox</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Photos">Photos</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="login.html"><button class="btnlogin">Log In</button></a>
+        </ul>
+    </nav>
+
+    <section id="home" class="text">
+        <h1>Capturing Moments, Creating Art</h1>
+        <p>Explore the world through the lens.</p>
+        <button class="explore-btn"><a href="#Photos">EXPLORE THE WORLD</a></button>
+    </section>
+
+    <section id="Photos">
+        <h2>Natural Photography</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="gallery/wallpaperflare.com_wallpaper.webp" alt="Photography 1">
+                <h3>River with Green</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/aesthetic-retro-vaporwave-landscape.webp" alt="Photography 2">
+                <h3>Aesthetic Landscape</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/beautiful-view-banff-national-park.webp" alt="Photography 3">
+                <h3>National Park</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/lake-mountains.webp" alt="Photography 4">
+                <h3>Lake Mountain</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/morskie-oko-tatry.webp" alt="Photography 5">
+                <h3>Morskie Tatry</h3>
+            </div>
+            <div class="gallery-item">
+                <img src="gallery/river-foggy-mountains-landscape.webp" alt="Photography 6">
+                <h3>Foggy Mountain</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Hire Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" autocomplete="name">
+                <input type="email" id="email" placeholder="Your Email" autocomplete="email">
+                <textarea id="message" placeholder="Description about the Program" autocomplete="off"></textarea>
+                <button type="submit" id="submit">Send Message</button>
+            </form>
+
+            <div id="savedMessages">
+                <h3>Sent Messages</h3>
+                <div id="messagesContainer"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>PhotoBox | Designed by Hridoy</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!--Firebase Libraries-->
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js"></script> 
+    <script src="main.js"></script>
+
+</body>
+</html>
