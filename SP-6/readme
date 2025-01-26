@@ -1,1 +1,34 @@
+# PhotoBox
 
+PhotoBox is a simple web application designed to showcase beautiful photography. The application includes a navigation bar, a home section, a photo gallery, and a contact form.
+
+## Features
+
+- **Navigation Bar**: Includes links to Home, Photos, About, and Contact sections, along with a Log In button.
+- **Home Section**: Displays a welcome message and a button to explore the photo gallery.
+- **Photo Gallery**: Showcases a collection of beautiful photographs with titles.
+- **Contact Form**: Allows users to send messages with their name, email, and a description.
+
+## Technologies Used
+
+- **HTML**: For the structure of the web application.
+- **CSS**: For styling the web application (linked as `styles.css`).
+- **JavaScript**: For interactivity and form handling (linked as `main.js` and `feedback.js`).
+- **Firebase**: For backend services including authentication and database.
+
+## How to Run
+
+1. Clone the repository.
+2. Open `index.html` in a web browser to view the application.
+
+## File Structure
+
+- `index.html`: Main HTML file.
+- `styles.css`: CSS file for styling.
+- `main.js`: JavaScript file for main functionalities.
+- `feedback.js`: JavaScript file for handling feedback.
+- `gallery/`: Directory containing image files for the photo gallery.
+
+## Contact
+
+For any inquiries, please use the contact form on the website.
